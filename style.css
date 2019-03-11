@@ -1,0 +1,114 @@
+/*DL Academy*/
+
+body {
+    background: #323232;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 1180px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.container--header {
+    display: flex;
+    background: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.top-nav {
+    background: black;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo-place {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: grey;
+}
+
+.top-nav__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: grey;
+    font-size: 14px;
+    padding-left: 20px;
+    transition: color 500ms;
+}
+
+.top-nav__link:hover {
+    color: white;
+}
+
+.container--section-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container__block:not(.container__block--horizontal) {
+    padding: 30px;
+    width: 320px;
+    background: black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.container__block--horizontal {
+    padding: 30px;
+    background: black;
+    margin-bottom: 20px;
+}
+
+.headline {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    color: white;
+    margin: 0;
+}
+
+.text {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: grey;
+    line-height: 26px;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+    body {
+        background: lightblue;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .container--header {
+        width: 100%;
+    }
+
+    .container__block:not(.container__block--horizontal) {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .container__block--horizontal {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .container__block--horizontal:nth-last-child(1) {
+        margin-top: 0;
+    }
+
+}
